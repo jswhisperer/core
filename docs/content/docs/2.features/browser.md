@@ -115,7 +115,7 @@ const image = ref('')
 const theme = ref('light')
 const loading = ref(false)
 
-async function capture {
+async function capture() {
   if (loading.value) return
   loading.value = true
   const blob = await $fetch('/api/browser/capture', {
